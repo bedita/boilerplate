@@ -6,13 +6,14 @@ html5 boilerplate template frontend from intializr.com
 setup
 =====
 
-Clone frontend boilerplate into local path, for example /var/www/boilerplate.
+Clone frontend responsive into local bedita frontend path, for example in /frontends folder inside bedita (like /var/www/bedita/frontends/boilerplate).
 
-      cd /var/www
+      cd /var/www/bedita/frontends
       git clone git@github.com:bedita/boilerplate.git
 
 Copy boilerplate/webroot/index.php.sample in boilerplate/webroot/index.php.
-Edit boilerplate/webroot/index.php and set properly CAKE_CORE_INCLUDE_PATH and BEDITA_CORE_PATH.
+
+If your frontend path is not inside /bedita/frontends, edit boilerplate/webroot/index.php and set properly CAKE_CORE_INCLUDE_PATH and BEDITA_CORE_PATH.
 For instance, if your bedita home path is /var/www/bedita:
 
       if (!defined('CAKE_CORE_INCLUDE_PATH')) {
@@ -22,6 +23,11 @@ For instance, if your bedita home path is /var/www/bedita:
       if (!defined('BEDITA_CORE_PATH')) {
             define('BEDITA_CORE_PATH', "/var/www/bedita/bedita-app");
       }
+
+Copy config/core.php.sample into config/core.php:
+
+      cd /var/www/bedita/frontends/boilerplate/config
+      cp core.php.sample core.php
 
 Set permits for temporary folder boilerplate/tmp.
 For example, in unix shell, assuming 'john' is the username:
