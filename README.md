@@ -1,42 +1,40 @@
 Boilerplate
-==========
+===========
 
-Html5 Boilerplate BEdita frontend from http://intializr.com
+HTML5 Boilerplate BEdita frontend from http://intializr.com
 
 Setup
 =====
 
-a. Clone frontend boilerplate into local bedita frontend path, normally this is the __frontends__ folder inside bedita (like __/var/www/bedita/frontends/boilerplate__), so:
+a. Clone frontend boilerplate into local bedita frontend path, normally this is the __frontends__ folder inside bedita (like */var/www/bedita/frontends*), so:
 
 ```
       cd /var/www/bedita/frontends
       git clone git@github.com:bedita/boilerplate.git
 ```
 
-b. Copy __boilerplate/webroot/index.php.sample__ to __boilerplate/webroot/index.php__.
+b. Copy *boilerplate/webroot/index.php.sample* to *boilerplate/webroot/index.php*.
 
 
-c. Copy __boilerplate/config/core.php.sample__ into __boilerplate/config/core.php__ and modify it, if necessary...
+c. Copy *boilerplate/config/core.php.sample* to *boilerplate/config/core.php* and modify it, if necessary...
 
 
-d. Set write permissions for temporary folder __boilerplate/tmp__.
-    For example, in unix shell, assuming 'john' is the username:
+d. Set write permissions for temporary folder *boilerplate/tmp*.
+    For example, in a unix shell, assuming 'john' is the username and current path is *frontends* folder:
 
 ```
-      sudo chown -R john:www-data /var/www/boilerplate/tmp
-      sudo chmod -R g+w /var/www/boilerplate/tmp
+      sudo chown -R john:www-data boilerplate/tmp
+      sudo chmod -R g+w boilerplate/tmp
 ```
 
-Enjoy boilerplate frontend ;)
-
-If something goes wrong take a look at log files (for example in boilerplate/tmp/logs) and tune your core.php file, changing debug level as needed (boilerplate/config/core.php).
+If something goes wrong take a look at log files (for example in *boilerplate/tmp/logs*) and tune your core.php file, changing debug level as needed (*boilerplate/config/core.php*).
 
 Also read this article: http://docs.bedita.com/setup/if-something-goes-wrong-in-bedita
 
 
 Note
 ====
-If your frontend path is not inside /bedita/frontends, edit boilerplate/webroot/index.php and set properly CAKE_CORE_INCLUDE_PATH and BEDITA_CORE_PATH.
+If your frontend path is not inside *bedita/frontends* but elsewhere, you may edit *boilerplate/webroot/index.php* and set properly CAKE_CORE_INCLUDE_PATH and BEDITA_CORE_PATH.
 For instance, if your bedita home path is /var/www/bedita:
 
 ```
