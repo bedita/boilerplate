@@ -26,7 +26,7 @@ For instance, if your bedita home path is /var/www/bedita:
 
 Copy config/core.php.sample into config/core.php:
 
-      cd /var/www/bedita/frontends/responsive/config
+      cd /var/www/bedita/frontends/boilerplate/config
       cp core.php.sample core.php
 
 Set permits for temporary folder boilerplate/tmp.
