@@ -1,7 +1,7 @@
 Boilerplate
 ===========
 
-HTML5 Boilerplate BEdita frontend from http://intializr.com
+HTML5 Boilerplate BEdita frontend from http://www.initializr.com/
 
 Setup
 =====
