@@ -1,2 +1,2 @@
-<h2>Error 404 - Missing Page</h2>
+<h2>Generic error!</h2>
 {$view->element('error_details')}
