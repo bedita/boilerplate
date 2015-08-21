@@ -137,19 +137,25 @@ $config['cookieName'] = array(
 /**
  * Enable API endpoints for the  frontend
  * Possible params are:
+ *
  * - `baseUrl` (required) the endpoint base url
- * - `JWT` (optional) a set of conf for JWT creation
  * - `allowedOrigins` (optional) a list of allowed origin to use the API
+ * - `auth` (optional) an array of authentication options
+ *   - `component` define your own custom API auth component to use
+ *   - `JWT` a set of conf for JWT creation
  * - `formatting` (optional) define some formatting rules as fields to remove or to keep
  * - `validation` (optional) define some validation rules as objects that can be write via API
  */
 // $config['api'] = array(
 //     'baseUrl' => '/api/v1',
-//     'JWT' => array(
-//         'expiresIn' => 600,
-//         'alg' => 'HS256'
-//     ),
 //     'allowedOrigins' => array(),
+//     'auth' => array(
+//         'component' => 'CustomAuth',
+//         'JWT' => array(
+//             'expiresIn' => 600,
+//             'alg' => 'HS256'
+//         )
+//     ),
 //     'formatting' => array(
 //         'fields' => array(
 //             // fields that should be removed from results
